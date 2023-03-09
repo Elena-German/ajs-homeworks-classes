@@ -53,7 +53,7 @@ test('testing function levelUp (health <= 0)', () => {
   function levelUpPlayer() {
     player.levelUp();
   }
-  expect(levelUpPlayer).toThrow(new Error('Здоровье персонажа =0. Нельзя повысить уровень умершего персонажа.'));
+  expect(levelUpPlayer).toThrow(new Error('Здоровье персонажа <=0. Нельзя повысить уровень умершего персонажа.'));
 });
 
 test('testing function damage (health < 0)', () => {
